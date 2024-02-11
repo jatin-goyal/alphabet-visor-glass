@@ -508,9 +508,9 @@ a:focus {
   visibility: visible;
 }
 
-.product_section .box:hover .img-box::before {
+/* .product_section .box:hover .img-box::before {
   opacity: 0.2;
-}
+} */
 
 .product_section .btn_box {
   display: -webkit-box;
@@ -555,6 +555,7 @@ a:focus {
 
 .about_section .detail-box {
   margin: 45px 0;
+  margin-right: 0px;
 }
 
 .about_section .detail-box p {
