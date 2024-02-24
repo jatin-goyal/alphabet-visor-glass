@@ -6,9 +6,8 @@ $primary2: #3a4468;
 $textCol: #999;
 
 @mixin main-font {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
   display: inline-block;
@@ -17,7 +16,7 @@ $textCol: #999;
   color: $col2;
   border-radius: $bRadius;
   border: 1px solid $col1;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &:hover {
     background-color: transparent;
@@ -29,8 +28,6 @@ $textCol: #999;
   text-transform: uppercase;
   font-weight: bold;
 }
-
-
 
 body {
   @include main-font;
@@ -120,25 +117,23 @@ a:focus {
 
 .header_section {
   background-color: $primary2;
+  position: sticky;
+  top: 10px !important;
+  border-bottom: #000000 10px solid;
 
   .container-fluid {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .header_top {
     padding: 15px 0;
     background-color: lighten($color: $primary2, $amount: 5);
-
   }
 
   .header_bottom {
     padding: 10px 0;
-
-
-
   }
-
 }
 
 .top_nav_container {
@@ -247,8 +242,6 @@ a:focus {
   }
 }
 
-
-
 .custom_nav-container .navbar-toggler {
   outline: none;
 }
@@ -257,7 +250,7 @@ a:focus {
   padding: 0;
   width: 37px;
   height: 42px;
-  transition: all .3s;
+  transition: all 0.3s;
 
   span {
     display: block;
@@ -268,7 +261,7 @@ a:focus {
     transition: all 0.3s;
     position: relative;
     border-radius: 5px;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &::before,
     &::after {
@@ -280,7 +273,7 @@ a:focus {
       background-color: $white;
       top: -10px;
       border-radius: 5px;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
     &::after {
@@ -300,13 +293,8 @@ a:focus {
         top: 0;
       }
     }
-
   }
-
-
 }
-
-
 
 /*end header section*/
 
@@ -327,7 +315,6 @@ a:focus {
     position: unset;
   }
 
-
   .detail-box {
     color: $primary2;
 
@@ -338,7 +325,6 @@ a:focus {
       span {
         color: $primary1;
       }
-
     }
 
     p {
@@ -375,7 +361,7 @@ a:focus {
       height: 50px;
       background-color: $primary2;
       opacity: 1;
-      transition: all .2s;
+      transition: all 0.2s;
       font-size: 18px;
 
       img {
@@ -387,12 +373,9 @@ a:focus {
       }
     }
   }
-
-
 }
 
 // end slider section
-
 
 // product section
 
@@ -438,7 +421,7 @@ a:focus {
         bottom: 50%;
         left: 50%;
         transform: translate(-50%, 50%);
-        transition: all .3s;
+        transition: all 0.3s;
         opacity: 0;
         z-index: 3;
 
@@ -458,7 +441,7 @@ a:focus {
         background-color: $white;
         z-index: 1;
         opacity: 0;
-        transition: all .2s;
+        transition: all 0.2s;
       }
     }
 
@@ -467,7 +450,6 @@ a:focus {
       display: flex;
       flex-direction: column;
       width: 100%;
-
     }
 
     .product_info {
@@ -479,8 +461,6 @@ a:focus {
       color: #f2b01e;
     }
 
-
-
     &:hover {
       .img-box {
         .add_cart_btn {
@@ -489,10 +469,9 @@ a:focus {
         }
 
         &::before {
-          opacity: .55;
+          opacity: 0.55;
         }
       }
-
     }
   }
 
@@ -508,7 +487,6 @@ a:focus {
 }
 
 // end product section
-
 
 // about section
 .about_section {
@@ -554,7 +532,7 @@ a:focus {
   .box {
     margin-top: 25px;
     text-align: center;
-    box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: .15);
+    box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: 0.15);
     padding: 25px 15px;
 
     .img-box {
@@ -600,7 +578,6 @@ a:focus {
 // client section
 
 .client_section {
-
   .client_container {
     margin: 15px auto 0 auto;
 
@@ -628,7 +605,15 @@ a:focus {
           margin-right: 25px;
           background-color: $primary1;
           padding: 55px 15px 15px 15px;
-          clip-path: polygon(35% 15%, 50% 0, 65% 15%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+          clip-path: polygon(
+            35% 15%,
+            50% 0,
+            65% 15%,
+            100% 15%,
+            100% 100%,
+            0 100%,
+            0 15%
+          );
 
           img {
             width: 100%;
@@ -636,7 +621,6 @@ a:focus {
         }
 
         .name {
-
           h5 {
             font-weight: bold;
             text-transform: uppercase;
@@ -662,7 +646,7 @@ a:focus {
     opacity: 1;
     background-color: $primary2;
     font-size: 24px;
-    transition: all .2s;
+    transition: all 0.2s;
 
     &:hover {
       background-color: $primary1;
@@ -680,8 +664,6 @@ a:focus {
 
 // end client section
 
-
-
 // info section
 .info_section {
   background-color: $primary2;
@@ -694,7 +676,6 @@ a:focus {
   }
 
   .info_links {
-
     ul {
       padding: 0;
 
@@ -741,11 +722,9 @@ a:focus {
       }
     }
   }
-
 }
 
 // end info section
-
 
 /* footer section*/
 
@@ -765,6 +744,5 @@ a:focus {
     }
   }
 }
-
 
 // end footer section
